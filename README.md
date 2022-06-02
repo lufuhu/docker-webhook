@@ -6,7 +6,7 @@ Forked from [almir/webhook](https://github.com/almir/docker-webhook)
 
 ## docker run
 ```
-docker run -d -p 9000:9000 --name=webhook my-webhook-image
+docker run -d -p 9000:9000 --name=webhook lufuhu/webhook:latest
 ```
 
 ## docker compose
