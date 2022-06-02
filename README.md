@@ -4,14 +4,12 @@
 
 Forked from [almir/webhook](https://github.com/almir/docker-webhook)
 
-## use
-
-- docker run
+## docker run
 ```
 docker run -d -p 9000:9000 --name=webhook my-webhook-image
 ```
 
-- docker compose
+## docker compose
 ```
 version: "3"
 
@@ -23,7 +21,7 @@ services:
     restart: always
     volumes:
       - ./hooks.json:/etc/webhook/hooks.json:ro
-	  - ./scripts:/etc/webhook/scripts/:rw
+      - ./scripts:/etc/webhook/scripts/:rw
     ports:
       - "9000:9000"
 ```
