@@ -26,3 +26,6 @@ services:
       - "9000:9000"
 ```
 
+## webhook url
+
+http://yourserver:9000/hooks/redeploy-webhook
